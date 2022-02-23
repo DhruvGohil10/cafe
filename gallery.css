@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.navbar {
+  height: 80px;
+  width: 100vw;
+  font-weight: 500;
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  background-color: rgb(48, 36, 24);
+  overflow: hidden;
+  position: relative; 
+  padding-left: 1rem;
+  line-height: 80px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #cfa788;
+  margin-left: 1.4rem;
+}
+.navbar a:hover {
+  border-bottom: 2px solid #cfa788;
+}
+
+.title {
+  color: rgba(255, 255, 255, 0.904);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  font-size: 2.2rem;
+  font-weight: 800;
+  word-spacing: .6rem;
+  letter-spacing: .25rem;
+  margin: 0;
+}
+
+.grid {
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: repeat(17, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  gap: 3px;
+  background: rgb(68, 56, 45);
+}
+
+.grid > div > img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.g1  {grid-area: 1/1/5/4      ;}
+.g2  {grid-area: 1/4/4/9      ;}
+.g3  {grid-area: 1/9/4/12     ;}
+.g4  {grid-area: 1/12/3/15    ;}
+.g5  {grid-area: 1/15/7/18    ;}
+.g6  {grid-area: 5/1/7/4      ;}
+.g7  {grid-area: 4/4/7/10     ;}
+.g8  {grid-area: 4/10/7/12    ;}
+.g9  {grid-area: 3/12/7/15    ;}
+.g10 {grid-area: 7/1/10/5     ;}
+.g11 {grid-area: 7/5/11/8     ;}
+.g12 {grid-area: 7/8/10/14    ;}
+.g13 {grid-area: 7/14/10/18   ;}
+.g14 {grid-area: 10/1/13/5    ;}
+.g15 {grid-area: 11/5/13/8    ;}
+.g16 {grid-area: 10/8/14/11   ;}
+.g17 {grid-area: 10/11/13/15  ;}
+.g18 {grid-area: 10/15/15/18  ;}
+.g19 {grid-area: 13/1/17/6    ;}
+.g20 {grid-area: 13/6/17/8    ;}
+.g21 {grid-area: 14/8/17/11   ;}
+.g22 {grid-area: 13/11/17/15  ;}
+.g23 {grid-area: 15/15/17/18  ;}
+
+@media (max-width: 1400px){
+  .title {
+    left: 60%;
+  }
+}
+
+@media (max-width: 500px){
+  .title {display: none}
+}

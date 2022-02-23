@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+@font-face {
+	src: url(fonts/Mona-Free.otf);
+	font-family: mona;
+}
+
+/* 
+h2 {
+    text-transform: uppercase;
+    position: relative;
+}
+
+h2::before {    
+    content: ' ';
+    position: absolute;
+    width: 5em;
+    background: rgba(21, 196, 255, 0.781);
+    height: .3em;
+    bottom: .1em;
+    z-index: -1;
+    margin-left: -.6em;
+}
+ */
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+.navbar {
+	height: 80px;
+	width: 100%;
+	font-weight: 600;
+	font-size: 1.3rem;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0px;
+	background: rgb(48, 36, 24);
+	overflow-x: hidden;
+	position: relative;
+	padding-left: 1rem;
+	line-height: 80px;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: #cfa788;
+	margin-left: 1.4rem;
+}
+.navbar a:hover {
+	border-bottom: 2px solid #cfa788;
+}
+
+.hero {
+	height: 80vh;
+	width: 100vw;
+	background-color: rgb(19, 19, 19); /* rgb(214, 170, 124)*/
+	position: relative;
+}
+
+.heroImg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: opacity(45%);
+}
+
+.heroTitle {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	color: white;
+	text-align: center;
+	/* font-size: 4rem; if fonts montserrat*/
+	font-size: 6rem;
+	margin-top: 2rem;
+	letter-spacing: 0.8rem;
+	font-family: 'mona';
+}
+
+.heroText {
+	position: absolute;
+	top: 39%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 70%;
+	color: rgb(253, 249, 244);
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-size: 1.8rem;
+	line-height: 1.5;
+}
+
+.spotify {
+	height: 4rem;
+	width: 60%;
+	position: absolute;
+	bottom: 1.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	line-height: 4rem;
+}
+
+.spotify img {
+	height: 4rem;
+	width: 4rem;
+	object-fit: cover;
+	filter: invert(100%);
+}
+
+.spotifyText {
+	font-family: 'Montserrat', sans-serif;
+	padding-left: 2rem;
+	color: white;
+	font-size: 2rem;
+	font-weight: 500;
+	margin: 0;
+}
+
+.second {
+	position: relative;
+	height: 70vh;
+	width: 100%;
+	background: #d6aa7c;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.second img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-top-right-radius: 10rem;
+}
+
+.right-col {
+	position: relative;
+}
+
+.title {
+	position: absolute;
+	top: 0;
+	right: 5rem;
+	width: 80%;
+	font-family: 'mona', sans-serif;
+	font-size: 4rem;
+	color: rgb(34, 24, 14);
+}
+
+.text {
+	position: absolute;
+	right: 5rem;
+	bottom: 0;
+	width: 80%;
+	margin: 0;
+	color: rgb(34, 24, 14);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+@media (max-width: 500px) {
+	.heroTitle {
+		font-size: 5rem;
+		width: 90%;
+	}
+
+	.hero {
+		height: 100vh;
+	}
+
+	.heroTitle {
+		margin-bottom: 0;
+	}
+
+	.heroText {
+		margin-top: -1.3rem;
+	}
+
+	.second {
+		height: 120vh;
+		grid-template-columns: 1fr;
+	}
+
+	.second img {
+		border-top-right-radius: 0;
+	}
+
+	.title {
+		top: 0;
+		right: 0;
+		width: 99%;
+		text-align: center;
+		font-size: 3rem;
+	}
+
+	.text {
+		right: 0;
+		bottom: 1rem;
+		width: 90%;
+		font-size: 1.5rem;
+		text-align: center;
+	}
+}
+
+@media (min-width: 1400px) {
+	.title {
+		top: 0;
+		right: 5rem;
+		width: 80%;
+		font-size: 5rem;
+	}
+
+	.text {
+		right: 5rem;
+		bottom: 7rem;
+		width: 80%;
+		font-size: 2rem;
+		font-weight: 500;
+	}
+
+	.hero {
+		height: 70vh;
+	}
+}
